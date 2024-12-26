@@ -1395,6 +1395,23 @@
     ]
   },
   {
+    "name": "Wishlist Settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "wishlist_button_active_color",
+        "label": "Wishlist Button Active Color",
+        "default": "#FF0000"
+      },
+      {
+        "type": "color",
+        "id": "wishlist_button_inactive_color",
+        "label": "Wishlist Button Inactive Color",
+        "default": "#CCCCCC"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.currency_format.name",
     "settings": [
       {
