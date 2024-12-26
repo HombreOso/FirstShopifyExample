@@ -1,0 +1,23 @@
+.wishlist-button {
+  background: #4CAF50;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4CAF50;
+  z-index: 100;
+}
+
+.wishlist-icon__image {
+  transition: all 0.3s ease;
+  fill: none;
+  stroke: #FF0000;
+  stroke-width: 2;
+}
+
+.wishlist-icon__image.active {
+  fill: #4CAF50;
+  stroke: #4CAF50;
+}

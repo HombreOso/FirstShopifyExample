@@ -141,17 +141,7 @@
               </span>
             {%- endif -%}
           </div>
-          <div class="wishlist-icon badge--bottom-right" data-product-id="{{ product.id }}">
-            <a href="{{ card_product.url }}" class="full-unstyled-link">
-              <img
-                width="24px"
-                height="24px"
-                index="100"
-                src="{{ 'icon-heart.svg' | asset_url }}"
-                alt="Add to Wishlist"
-              >
-            </a>
-          </div>
+          {%- render 'button-wishlist', product: card_product -%}
         </div>
       </div>
       <div class="card__content">
