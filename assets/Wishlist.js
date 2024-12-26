@@ -57,7 +57,7 @@ const setupGrid = async (grid) => {
 const handleButtonClick = (button, productHandle) => () => {
   console.log(`[Shopify Wishlist] Button clicked for handle: ${productHandle}`);
   updateWishlist(productHandle);
-  button.classList.toggle(BUTTON_ACTIVE_CLASS);
+  console.log('product handle', productHandle, 'button', button.classList);
 };
 
 const setupButtons = (buttons) => {
@@ -73,6 +73,8 @@ const setupButtons = (buttons) => {
     } else {
       button.classList.remove(BUTTON_ACTIVE_CLASS);
     }
+
+    console.log('button', button.classList);
 
     // Remove existing event listeners if any
     button.removeEventListener('click', button._wishlistClickHandler);
@@ -146,7 +148,6 @@ const resetWishlist = () => {
 
 window.toggleWishlist = function (element) {
   console.log('toggleWishlist function called');
-  element.classList.toggle('active');
 
   // Optionally, add more functionality here
   console.log('Element classes after toggle:', element.classList);

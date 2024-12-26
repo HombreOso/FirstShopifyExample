@@ -611,7 +611,7 @@
               {{ 'onboarding.product_title' | t }}
             </a>
           </h3>
-          <button class="add-to-wishlist" data-product-id="{{ product.id }}">Add to Wishlist</button>
+          {%- render 'button-wishlist', product: card_product -%}
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
